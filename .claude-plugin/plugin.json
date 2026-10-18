@@ -10,13 +10,26 @@
   "homepage": "https://github.com/yoshi5534/VoxelSieve/blob/main/docs/quickstart.md",
   "repository": "https://github.com/yoshi5534/voxelsieve-plugin",
   "license": "Apache-2.0",
-  "keywords": ["computed tomography", "CT", "porosity", "nominal-actual comparison", "first article inspection", "quality inspection", "manufacturing", "OpenVDB"],
+  "icon": "./icon.png",
+  "documentationUrl": "https://github.com/yoshi5534/VoxelSieve/blob/main/docs/quickstart.md",
+  "supportUrl": "https://github.com/yoshi5534/VoxelSieve/issues",
+  "keywords": [
+    "computed tomography",
+    "CT",
+    "porosity",
+    "nominal-actual comparison",
+    "first article inspection",
+    "quality inspection",
+    "manufacturing",
+    "OpenVDB"
+  ],
   "userConfig": {
     "scan_dir": {
       "type": "directory",
       "title": "Scan directory",
-      "description": "Directory with your CT scans. VoxelSieve reads and writes only inside it, including its projects and reports.",
-      "required": true
+      "description": "Directory with your CT scans; created when missing. VoxelSieve reads and writes only inside it, including its projects and reports.",
+      "required": true,
+      "default": "~/VoxelSieve"
     },
     "vs_gui": {
       "type": "string",

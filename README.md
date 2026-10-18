@@ -23,8 +23,8 @@ entry in `.mcp.json`.
 - Your scans never leave your computer. VoxelSieve reads them and writes projects, images and
   reports next to them. Claude receives only results: pore lists, measurements, slice images and
   report paths.
-- VoxelSieve reads and writes only inside the scan directory you choose when you enable the
-  plugin, and refuses every other path.
+- VoxelSieve reads and writes only inside the scan directory (`~/VoxelSieve` unless you choose
+  another one), and refuses every other path.
 - VoxelSieve makes no network connections, needs no account and no API key, and sends no
   telemetry. Its time and memory statistics stay in the project directory.
 
@@ -40,12 +40,13 @@ entry in `.mcp.json`.
    - Claude Code: `/plugin marketplace add yoshi5534/voxelsieve-plugin`, then
      `/plugin install voxelsieve@voxelsieve`
    - Claude app: Customize > Plugins
-3. When asked, choose the **scan directory**, and set **VoxelSieve program** to the full path of
-   `bin/vs-gui` (`bin\vs-gui.exe` on Windows) unless it is on your PATH.
+3. Set **VoxelSieve program** to the full path of `bin/vs-gui` (`bin\vs-gui.exe` on Windows)
+   unless it is on your PATH. The **scan directory** defaults to `VoxelSieve` in your home
+   directory (created when missing); put your scans there or choose another directory.
 
-The plugin's server runs in Claude Code. Cowork and the Claude chat do not ask for the scan
-directory yet, so there install VoxelSieve's `.mcpb` bundle from the release in Claude Desktop
-instead (double-click it, then choose the scan directory).
+The plugin needs VoxelSieve 0.4.2 or later. Its server runs in Claude Code and in Cowork on your
+computer. In the Claude chat, install VoxelSieve's `.mcpb` bundle from the release in Claude
+Desktop instead.
 
 ## Try it
 
