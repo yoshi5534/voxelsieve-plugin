@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "voxelsieve": {
+      "command": "${user_config.vs_gui}",
+      "args": ["--mcp", "${user_config.scan_dir}"]
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "voxelsieve",
+  "owner": {
+    "name": "yoshi5534",
+    "url": "https://github.com/yoshi5534"
+  },
+  "metadata": {
+    "description": "VoxelSieve: industrial CT analysis with Claude on your own computer"
+  },
+  "plugins": [
+    {
+      "name": "voxelsieve",
+      "source": "./",
+      "description": "Analyse industrial CT scans on your own computer: porosity, CAD comparison, first article inspection and reports"
+    }
+  ]
+}

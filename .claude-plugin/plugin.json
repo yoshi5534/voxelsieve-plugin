@@ -1,0 +1,28 @@
+{
+  "name": "voxelsieve",
+  "displayName": "VoxelSieve",
+  "version": "0.1.0",
+  "description": "Analyse industrial CT scans on your own computer: porosity against acceptance limits, comparison with the CAD model, first article inspection and reports",
+  "author": {
+    "name": "yoshi5534",
+    "url": "https://github.com/yoshi5534"
+  },
+  "homepage": "https://github.com/yoshi5534/VoxelSieve/blob/main/docs/quickstart.md",
+  "repository": "https://github.com/yoshi5534/voxelsieve-plugin",
+  "license": "Apache-2.0",
+  "keywords": ["computed tomography", "CT", "porosity", "nominal-actual comparison", "first article inspection", "quality inspection", "manufacturing", "OpenVDB"],
+  "userConfig": {
+    "scan_dir": {
+      "type": "directory",
+      "title": "Scan directory",
+      "description": "Directory with your CT scans. VoxelSieve reads and writes only inside it, including its projects and reports.",
+      "required": true
+    },
+    "vs_gui": {
+      "type": "string",
+      "title": "VoxelSieve program",
+      "description": "Path to vs-gui from the VoxelSieve release (bin/vs-gui, or bin\\vs-gui.exe on Windows), or just vs-gui when it is on the PATH.",
+      "default": "vs-gui"
+    }
+  }
+}
