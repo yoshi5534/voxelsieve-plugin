@@ -1,8 +1,8 @@
 {
   "name": "voxelsieve",
   "displayName": "VoxelSieve",
-  "version": "0.1.0",
-  "description": "Analyse industrial CT scans on your own computer: porosity against acceptance limits, comparison with the CAD model, first article inspection and reports",
+  "version": "0.2.0",
+  "description": "Analyse industrial CT scans on your own computer: porosity against acceptance limits, wall thickness, comparison with the CAD model, first article inspection, battery cells, fibre composites and reports",
   "author": {
     "name": "yoshi5534",
     "url": "https://github.com/yoshi5534"
@@ -19,6 +19,9 @@
     "porosity",
     "nominal-actual comparison",
     "first article inspection",
+    "wall thickness",
+    "battery cell",
+    "fibre composite",
     "quality inspection",
     "manufacturing",
     "OpenVDB"

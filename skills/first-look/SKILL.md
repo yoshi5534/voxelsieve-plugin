@@ -22,5 +22,7 @@ this plugin (`${user_config.scan_dir}`). Paths outside it are refused; ask for a
    the grey value distribution from `histogram`, including the suggested number of materials.
 4. Show the middle slices along z, y and x with `view_slice`. Describe the part, visible voids,
    and artefacts such as rings, streaks or beam hardening. Say what you see, do not guess sizes.
-5. Suggest which analysis fits next: porosity check, comparison with the CAD model, material
-   segmentation or first article inspection.
+5. Suggest which analysis fits next: porosity check, wall thickness, comparison with the CAD
+   model, material segmentation, fibre orientation of a composite, battery cell inspection or
+   first article inspection. If you saw beam hardening or strong noise, suggest correcting it
+   first with `run_beam_hardening` or `run_denoise`; both write a new dataset and keep the scan.

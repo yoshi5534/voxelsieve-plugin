@@ -6,10 +6,16 @@ analysis program built on OpenVDB, and adds skills for the common inspection tas
 
 - **first-look**: size, voxel size, grey values and slices through a new scan
 - **porosity-check**: pores and loosened microstructure, checked against the acceptance limits of
-  an inspection order (BDG P 202 zones), with an inspection report
+  an inspection order (BDG P 202 zones or BDG P 203 porosity keys in freely defined regions),
+  with an inspection report; beam hardening corrected first when the scan needs it
+- **wall-thickness**: wall thickness on the surface, thin regions, the thickness map of the
+  volume and the deviation from the nominal thickness of the CAD model
 - **cad-comparison**: nominal-actual comparison of the scanned surface with the CAD model
 - **first-article-inspection**: drawing characteristics measured on the scan with datums and
   tolerances, and the first article inspection report
+- **battery-cell**: housing, electrode layers, anode overhang, particles and voids of a battery
+  cell, with a report against its specification
+- **fibre-composite**: materials, fibre directions and fibre families of a composite part
 
 VoxelSieve handles raw volumes, TIFF stacks, DICOM and gzipped XML projects, also scans of
 hundreds of GB that do not fit in memory.
@@ -44,7 +50,8 @@ entry in `.mcp.json`.
    unless it is on your PATH. The **scan directory** defaults to `VoxelSieve` in your home
    directory (created when missing); put your scans there or choose another directory.
 
-The plugin needs VoxelSieve 0.4.2 or later. Its server runs in Claude Code and in Cowork on your
+The plugin needs VoxelSieve 0.4.2 or later; wall thickness needs 0.6.1, and BDG P 203 and the
+beam hardening correction need the release after 0.6.1. Its server runs in Claude Code and in Cowork on your
 computer. In the Claude chat, install VoxelSieve's `.mcpb` bundle from the release in Claude
 Desktop instead.
 
@@ -58,6 +65,8 @@ With the sample data from the release in your scan directory:
 > Compare the scan with housing.stl and show me where it deviates by more than 0.1 mm.
 
 > Take a first look at this TIFF stack: size, voxel size and three slices.
+
+> Where are the walls of the housing thinner than 1.5 mm?
 
 ## License
 
