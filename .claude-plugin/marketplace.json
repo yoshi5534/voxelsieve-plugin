@@ -11,7 +11,7 @@
     {
       "name": "voxelsieve",
       "source": "./",
-      "description": "Analyse industrial CT scans on your own computer: porosity, CAD comparison, first article inspection and reports"
+      "description": "Analyse industrial CT scans on your own computer: porosity, wall thickness, CAD comparison, first article inspection, battery cells, fibre composites and reports"
     }
   ]
 }
